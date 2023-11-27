@@ -1,11 +1,15 @@
-## Información sobre Desafio 9
+## Información sobre Desafio 10
+
+Se agrego la libreria **Logger Winston** para trabajar con los logs del backend, para ello cree un archivo "loggers.js" en la carpeta "utils" donde se crea y configuran los distintos niveles de error, ademas deje la posibilidad de generar logs en consola, para ello hay que configurar la variable de entorno MODE con el valor "development", en caso contrario se almacenaran todos en archivos, estos ultimos se generaran en la carpeta logs, uno para logs generales llamado "general.log" y otro para errores llamado "errors.log".
+
+Ademas cree una ruta **http://localhost:8080/loggerTest** que permite probar cada uno de los niveles de error.
+
+## Temas de clases pasadas
 
 Se agrego la ruta **http://localhost:8080/mockingproducts** la misma genera y devuelve una lista de 100 productos con los mismos 
 campos del modelo Product.
 
 Ademas se agrego el manejador de errores **http-errors** como alternativa al visto en clase, el mismo lo aplique en la ruta para crear productos **http://localhost:8080/api/products**, mas abajo se explica como se utiliza y que datos hay que pasar al body.
-
-## Temas de clases pasadas
 
 Se separo en capas el proyecto, al mismo se le agrego la carpeta service, en el mismo se realizaron las clases que 
 se encargan de interactuar con las clases DAO de User, Product, etc.
